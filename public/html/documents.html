@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dokumente — [YOUR FULL NAME]</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <span class="name">Raphael Seidel</span>
+      <a class="navButton" href="../index.html">Start</a>
+      <a class="navButton" href="about.html">Über mich</a>
+      <a class="navButton" href="projects.html">Projekte</a>
+      <a class="navButton" href="skills.html">Skills</a>
+      <a class="navButton" href="documents.html">Dokumente</a>
+    </nav>
+    <main class="page">
+      <div id="loginArea" class="login-wrap">
+        <div class="login-box">
+          <h1>Privater Bereich</h1>
+          <p class="login-note">
+            Dieser Bereich ist passwortgeschützt. Bitte melden Sie sich an, um
+            die Bewerbungsunterlagen herunterzuladen.
+          </p>
+          <label for="loginPass">Passwort</label>
+          <input
+            type="password"
+            id="loginPass"
+            placeholder="Passwort"
+            autocomplete="current-password"
+            onkeydown="if (event.key === 'Enter') checkLogin();"
+          />
+          <p id="loginError" class="login-error">
+            Falsches Passwort. Bitte versuchen Sie es erneut.
+          </p>
+          <button class="btn" onclick="checkLogin()">Anmelden</button>
+        </div>
+      </div>
+
+      <div id="docsArea">
+        <div class="docs-header">
+          <h1>Bewerbungsunterlagen</h1>
+          <button class="btn btn-logout" onclick="logout()">Abmelden</button>
+        </div>
+        <div class="docs-grid" id="docsGrid"></div>
+      </div>
+    </main>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
