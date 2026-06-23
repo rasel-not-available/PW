@@ -695,6 +695,7 @@ body {
   align-self: flex-start;
   padding: 8px 18px;
   font-size: 14px;
+  font-family: inherit;
   text-decoration: none;
   color: var(--text);
   background-color: var(--accent);
@@ -702,6 +703,12 @@ body {
   border-radius: var(--radius);
   box-shadow: var(--box-shadow-light);
   transition: var(--transition);
+  cursor: pointer;
+}
+
+.btn-download:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
 }
 
 .btn-download:hover {

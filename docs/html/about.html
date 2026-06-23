@@ -3,14 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dokumente — [YOUR FULL NAME]</title>
+    <title>Über mich — Raphael Seidel</title>
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet" />
   </head>
   <body>
     <nav class="navbar">
@@ -27,7 +24,7 @@
           <h1>Privater Bereich</h1>
           <p class="login-note">
             Dieser Bereich ist passwortgeschützt. Bitte melden Sie sich an, um
-            die Bewerbungsunterlagen herunterzuladen.
+            den Lebenslauf einzusehen.
           </p>
           <label for="loginPass">Passwort</label>
           <input
@@ -43,14 +40,7 @@
           <button class="btn" onclick="checkLogin()">Anmelden</button>
         </div>
       </div>
-
-      <div id="docsArea">
-        <div class="docs-header">
-          <h1>Bewerbungsunterlagen</h1>
-          <button class="btn btn-logout" onclick="logout()">Abmelden</button>
-        </div>
-        <div class="docs-grid" id="docsGrid"></div>
-      </div>
+      <div id="protectedContent" data-page="about" style="display:none;"></div>
     </main>
     <script src="../js/script.js"></script>
   </body>
