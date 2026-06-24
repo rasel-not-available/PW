@@ -157,6 +157,7 @@ body {
   justify-content: center;
   color: var(--muted);
   font-size: 14px;
+  overflow: hidden;
 }
 
 .profile-photo img {
@@ -165,6 +166,12 @@ body {
   object-fit: cover;
   display: block;
   border-radius: var(--radius);
+  transform: scale(1.5);
+  transition: all 0.75s;
+}
+
+.profile-photo img:hover {
+  transform: scale(1.4);
 }
 
 .profile-text h1 {
