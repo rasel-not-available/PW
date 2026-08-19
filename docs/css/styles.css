@@ -418,6 +418,7 @@ body {
 
 .tech {
   font-size: 12px;
+  font-weight: 700;
   padding: 3px 10px;
   border: var(--border);
   border-radius: var(--radius);
